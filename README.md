@@ -1,3 +1,2 @@
-# Personal Projects
+# Leon's blog/project site
 
-[google](google.com)
