@@ -4,8 +4,8 @@
 
 layout: home
 ---
-# Welcome to my site
+# Welcome!
 
-I post stuff here: blogs, project updates, and tips & tricks that could be helpful.
+I post stuff here: blogs, project updates, notes, and tips & tricks that could be helpful.
 
 
