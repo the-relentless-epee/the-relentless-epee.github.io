@@ -3,8 +3,9 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: home
+title: Welcome!
 ---
-# Welcome!
+
 
 I post stuff here: blogs, project updates, notes, and tips & tricks that could be helpful.
 
