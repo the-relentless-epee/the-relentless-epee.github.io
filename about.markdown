@@ -1,9 +1,10 @@
 ---
-layout: page
+layout: single
 title: About
 permalink: /about/
 ---
 
-I'll fill this page later :)
+Hi
 
-test 
+i need a job
+pls hire me

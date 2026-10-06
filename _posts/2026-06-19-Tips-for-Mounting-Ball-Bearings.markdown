@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title:  "Tips for Mounting Ball Bearings"
 date:   2026-06-19
 categories: notes
