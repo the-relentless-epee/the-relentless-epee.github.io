@@ -19,8 +19,17 @@
 # in the templates via {{ site.myvariable }}.
 
 title: Leon's Random Makes
+author:
+  name: "Leon Jiang"
+  avatar: "/assets/images/bearing/bearing.jpg" # placeholder image
+  bio: "Maker, engineer, and relentless tinkerer. I document my projects, builds, and the lessons learned along the way."
+  location: "The workshop"
+  email: "leonjiangzc@gmail.com"
+  github: "the-relentless-epee"
+  instagram: "leons_random_makes"
 email: leonjiangzc@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
+  Projects, builds, and lessons learned from tinkering in the workshop.
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://the-relentless-epee.github.io"
@@ -41,6 +50,30 @@ plugins:
   - jekyll-include-cache
   - jekyll-paginate
   - jekyll-sitemap
+
+# Default front matter for pages and posts.
+# These values are used unless a file overrides them in its own front matter.
+defaults:
+  # Project blog posts live in _posts/
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      show_date: true
+      share: true
+      related: true
+      comments: true # requires a comments provider to actually render
+      toc: true
+      toc_sticky: true
+  # Standalone pages (index.md, about.markdown, 404.html, ...)
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
 
 # Exclude from processing.
 # The following items will not be processed, by default.
