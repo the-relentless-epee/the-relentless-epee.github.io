@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Bearing mounting fixture">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1e3a8a"/>
+      <stop offset="1" stop-color="#0ea5e9"/>
+    </linearGradient>
+    <linearGradient id="metal" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f1f5f9"/>
+      <stop offset="1" stop-color="#94a3b8"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <g stroke="#ffffff" stroke-opacity="0.08" stroke-width="1">
+    <path d="M0 100h800M0 200h800M0 300h800M0 400h800M100 0v500M200 0v500M300 0v500M400 0v500M500 0v500M600 0v500M700 0v500"/>
+  </g>
+  <circle cx="400" cy="250" r="155" fill="#0f172a" opacity="0.25"/>
+  <circle cx="400" cy="250" r="150" fill="url(#metal)"/>
+  <circle cx="400" cy="250" r="100" fill="#1e3a8a"/>
+  <circle cx="400" cy="250" r="58" fill="url(#metal)"/>
+  <circle cx="400" cy="250" r="30" fill="#0f172a"/>
+  <g fill="#334155">
+    <circle cx="522" cy="250" r="11"/>
+    <circle cx="486.3" cy="336.3" r="11"/>
+    <circle cx="400" cy="372" r="11"/>
+    <circle cx="313.7" cy="336.3" r="11"/>
+    <circle cx="278" cy="250" r="11"/>
+    <circle cx="313.7" cy="163.7" r="11"/>
+    <circle cx="400" cy="128" r="11"/>
+    <circle cx="486.3" cy="163.7" r="11"/>
+  </g>
+  <g stroke="#38bdf8" stroke-width="4" fill="none" opacity="0.8">
+    <circle cx="400" cy="250" r="128"/>
+  </g>
+</svg>

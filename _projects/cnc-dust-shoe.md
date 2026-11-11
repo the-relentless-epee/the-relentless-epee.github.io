@@ -2,7 +2,7 @@
 title: "CNC Dust Shoe"
 summary: "A two-piece dust shoe with a magnetic brush skirt for the desktop router."
 thumbnail: /assets/images/projects/cnc-dust-shoe.svg
-order: 2
+order: 10
 ---
 
 ![CNC dust shoe](/assets/images/projects/cnc-dust-shoe.svg)
