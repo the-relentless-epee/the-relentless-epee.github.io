@@ -7,3 +7,155 @@ search: false
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+/* ==========================================================================
+   Portfolio
+   ========================================================================== */
+
+.intro {
+  max-width: 54em;
+  margin: 0 auto 3em;
+  text-align: center;
+
+  &__lead {
+    font-size: $type-size-4;
+    line-height: 1.5;
+    color: $text-color;
+  }
+
+  p {
+    color: $muted-text-color;
+  }
+
+  &__tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5em;
+    margin: 1.5em 0 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+      padding: 0.35em 0.9em;
+      border: 1px solid $border-color;
+      border-radius: 999px;
+      background: $lighter-gray;
+      color: $muted-text-color;
+      font-size: $type-size-6;
+    }
+  }
+}
+
+.projects {
+  margin-top: 2em;
+
+  &__header {
+    max-width: 40em;
+    margin: 0 auto 2em;
+    text-align: center;
+
+    h2 {
+      margin-bottom: 0.25em;
+      border-bottom: none;
+    }
+
+    p {
+      margin-top: 0;
+      color: $muted-text-color;
+    }
+  }
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1.5em;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid $border-color;
+  border-radius: 8px;
+  background: $background-color;
+  box-shadow: $box-shadow;
+  color: inherit;
+  text-decoration: none;
+  transition: $global-transition;
+
+  &:hover,
+  &:focus {
+    transform: translateY(-4px);
+    border-color: $primary-color;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.14);
+
+    .project-card__thumb img {
+      transform: scale(1.05);
+    }
+
+    .project-card__cta {
+      color: $primary-color;
+    }
+  }
+
+  &__thumb {
+    aspect-ratio: 16 / 10;
+    overflow: hidden;
+    background: $lighter-gray;
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+  }
+
+  &__body {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding: 1em 1.2em 1.2em;
+  }
+
+  &__title {
+    margin: 0 0 0.35em;
+    font-size: $type-size-5;
+  }
+
+  &__summary {
+    flex: 1;
+    margin: 0 0 0.9em;
+    color: $muted-text-color;
+    font-size: $type-size-6;
+    line-height: 1.5;
+  }
+
+  &__cta {
+    color: $text-color;
+    font-size: $type-size-7;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    transition: $global-transition;
+  }
+}
+
+@media (max-width: 600px) {
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.posts {
+  margin-top: 4em;
+  padding-top: 2em;
+  border-top: 1px solid $border-color;
+
+  .archive__subtitle {
+    margin-top: 0;
+  }
+}

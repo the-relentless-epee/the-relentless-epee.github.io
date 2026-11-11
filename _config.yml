@@ -21,9 +21,9 @@
 title: Leon's Random Makes
 author:
   name: "Leon Jiang"
-  avatar: "/assets/images/bearing/bearing.jpg" # placeholder image
-  bio: "Maker, engineer, and relentless tinkerer. I document my projects, builds, and the lessons learned along the way."
-  location: "The workshop"
+  avatar: "/assets/images/bearing/bearing.jpg"
+  bio: "Maker & robotics enthusiast, engineering student"
+  location: "Vancouver"
   email: "leonjiangzc@gmail.com"
   github: "the-relentless-epee"
   instagram: "leons_random_makes"
@@ -38,7 +38,14 @@ github_username:  the-relentless-epee
 
 # Build settings
 theme: minimal-mistakes-jekyll
-minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin: "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+
+# Collections
+collections:
+  projects:
+    output: true
+    permalink: /projects/:path/
+    sort_by: order
 
 # Outputting
 paginate: 5 # amount of posts to show
@@ -63,9 +70,9 @@ defaults:
       author_profile: true
       read_time: true
       show_date: true
-      share: true
-      related: true
-      comments: true # requires a comments provider to actually render
+      share: false
+      related: false
+      comments: false # requires a comments provider to actually render
       toc: true
       toc_sticky: true
   # Standalone pages (index.md, about.markdown, 404.html, ...)
@@ -74,6 +81,14 @@ defaults:
       type: pages
     values:
       layout: single
+  # Project pages live in _projects/
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: single
+      author_profile: true
+      share: false
 
 # Exclude from processing.
 # The following items will not be processed, by default.
