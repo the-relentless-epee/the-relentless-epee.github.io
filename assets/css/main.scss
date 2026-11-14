@@ -159,3 +159,12 @@ search: false
     margin-top: 0;
   }
 }
+
+.page__content {
+  font-size: $doc-font-size-medium;
+  line-height: 1.65;
+
+  p {
+    margin-bottom: 1.25em;
+  }
+}

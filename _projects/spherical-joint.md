@@ -1,11 +1,11 @@
 ---
-title: "Robot Gripper"
+title: "Spherical Rolling Contact Joint"
 summary: "A parallel-jaw gripper with 3D-printed linkage and a hobby servo drive."
-thumbnail: /assets/images/projects/robot-gripper.svg
+thumbnail: /assets/img/projects/robot-gripper.svg
 order: 4
 ---
 
-![Robot gripper](/assets/images/projects/robot-gripper.svg)
+![Robot gripper](/assets/img/projects/robot-gripper.svg)
 
 The goal was a gripper that could be rebuilt from the parts drawer. Two printed jaws run on steel guide pins, driven by a single servo through a symmetric linkage so the jaws close evenly.
 

@@ -3,7 +3,7 @@ layout: splash
 title: "Leon Jiang"
 tagline: "I build robots and cool things :)"
 header:
-  overlay_image: /assets/images/bearing/bearing.jpg
+  overlay_image: /assets/img/bearing/bearing.jpg
   overlay_filter: 0.55
   image_description: "Ball bearing"
   # actions:
