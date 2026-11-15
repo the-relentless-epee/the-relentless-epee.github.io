@@ -1,5 +1,6 @@
 ---
 title: "Bowden Actuator"
+date: 2026-07-23
 summary: "a low-inertia, flexible actuator force-transmission mechanism"
 thumbnail: /assets/img/projects/bowden_actuator/PXL_20260723_225359431.TS_exported_2867.jpg
 thumbnail_position: "50% 1%"

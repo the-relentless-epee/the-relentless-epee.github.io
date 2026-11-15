@@ -1,5 +1,6 @@
 ---
 title: "BLDC Virtual Cartesian Spring"
+date: 2026-10-01
 summary: "A 2-DOF robot arm that simulates a virtual spring and slider mechanism"
 thumbnail: /assets/img/projects/bldc_spring/PXL_20260904_070001864.jpg
 thumbnail_position: "50% 66%"

@@ -92,6 +92,7 @@ defaults:
       share: false
       toc: true
       toc_sticky: true
+      show_date: true
 
 # Exclude from processing.
 # The following items will not be processed, by default.

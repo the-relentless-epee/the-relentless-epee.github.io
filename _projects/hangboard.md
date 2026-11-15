@@ -1,5 +1,6 @@
 ---
 title: "Modular Hangboard"
+date: 2026-09-05
 summary: "Finger strength training board made from stainless steel, with interchangeable 3D printed grip profiles"
 thumbnail: assets/img/projects/hangboard/Screenshot 2026-11-12 160619.png
 thumbnail_zoom: 1
@@ -26,3 +27,5 @@ The finger piece is a separate 3D printed part, which allows me to make various 
 
 ## Cost:
 This hangboard is meant to be a low-cost and highly customizable DIY solution to typical wooden/casted hangboards. The sheet metal part has a bend radius of 12mm, which is manufactuable by pretty much all sheet metal manufacturers. If you order it from China and print the grip piece yourself, the overall cost is less than $10.
+
+# [Video Demo](https://www.instagram.com/leons_random_makes/reel/Dc7W6OhqRm4/)

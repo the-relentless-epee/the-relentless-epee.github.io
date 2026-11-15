@@ -1,5 +1,6 @@
 ---
 title: "Drum Robot Exoskeleton V1"
+date: 2026-08-10
 summary: "A wrist exoskeleton that teaches you to play drums"
 thumbnail: /assets/img/projects/drum_robot/drum_robot_07.jpg
 thumbnail_position: "50% 75%"

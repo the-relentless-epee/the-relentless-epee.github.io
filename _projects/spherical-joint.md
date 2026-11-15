@@ -1,5 +1,6 @@
 ---
 title: "Spherical Rolling Contact Joint"
+date: 2024-11-16
 summary: "2DOF cable driven actuator with spherical rolling contact element"
 thumbnail: assets/img/projects/spherical_joint/spherical_joint_pic.jpg
 thumbnail_position: "50% 60%"
