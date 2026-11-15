@@ -13,7 +13,7 @@ CAD of sensor assembly:
 
 <img src="/assets/img/projects/wind_tunnel/Screenshot 2026-11-13 084256.png" width=600>
 
-**MCU:** ESP32
-**Display:** 16x2 LCD display w/ I2C controller
-**Sensing:** 5N load cells, HX711 amplifiers (modified to run at 100Hz)
+**MCU:** ESP32      
+**Display:** 16x2 LCD display w/ I2C controller     
+**Sensing:** 5N load cells, HX711 amplifiers (modified to run at 100Hz)     
 

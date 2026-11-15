@@ -203,6 +203,11 @@ search: false
   }
 }
 
+// The date already appears below the title; hide the footer "Updated" line.
+.page__date {
+  display: none;
+}
+
 // Masthead social icon links
 .masthead__menu-item--icon {
   a {
