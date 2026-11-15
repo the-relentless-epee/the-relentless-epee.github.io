@@ -1,11 +1,17 @@
 ---
 title: "Bowden Actuator"
 summary: "a low-inertia, flexible actuator force-transmission mechanism"
-thumbnail: /assets/img/projects/bowden_actuator/
+thumbnail: /assets/img/projects/bowden_actuator/PXL_20260723_225359431.TS_exported_2867.jpg
+thumbnail_position: "50% 1%"
+thumbnail_fit: contain
+thumbnail_zoom: 2
 order: 3
+math: true
 ---
 
-This is a quick prototype of an actuator that uses tubes and cables to move the heavy mass of the actuator away from the joint. Inspired by bicycle brake/shift mechanisms (and the Neo robot hand).
+<img src="/assets/img/projects/bowden_actuator/PXL_20260723_225359431.TS_exported_2867.jpg" width = "400">
+
+This is a quick prototype of an actuator that uses tubes and cables to move the heavy mass of the actuator away from the joint. Inspired by bicycle brake/shift mechanisms (and the Neo robot hand). [Video demo](https://www.instagram.com/p/DbJzhm7PSTf/)
 
 ## Mechanical Design:
 This is a proof-of-concept prototype. It uses a stepper motor that drives a spool that pulls a 1mm cotton string (going to switch to dyneema when it arrives) through a 3D printer PTFE tube, and rotates a Capstan pulley as the joint.

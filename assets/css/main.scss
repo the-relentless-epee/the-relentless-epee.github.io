@@ -49,21 +49,23 @@ search: false
 
 .projects {
   margin-top: 2em;
+}
 
-  &__header {
-    max-width: 40em;
-    margin: 0 auto 2em;
-    text-align: center;
+.projects__header,
+.posts__header {
+  max-width: 40em;
+  margin: 0 auto 2em;
+  text-align: center;
 
-    h2 {
-      margin-bottom: 0.25em;
-      border-bottom: none;
-    }
+  h1,
+  h2 {
+    margin-bottom: 0.25em;
+    border-bottom: none;
+  }
 
-    p {
-      margin-top: 0;
-      color: $muted-text-color;
-    }
+  p {
+    margin-top: 0;
+    color: $muted-text-color;
   }
 }
 
@@ -92,7 +94,7 @@ search: false
     box-shadow: 0 10px 24px rgba(0, 0, 0, 0.14);
 
     .project-card__thumb img {
-      transform: scale(1.05);
+      transform: scale(calc(var(--thumb-zoom, 1) * 1.05));
     }
 
     .project-card__cta {
@@ -109,7 +111,9 @@ search: false
       display: block;
       width: 100%;
       height: 100%;
-      object-fit: cover;
+      object-fit: var(--thumb-fit, cover);
+      transform: scale(var(--thumb-zoom, 1));
+      transform-origin: 50% 50%;
       transition: transform 0.3s ease;
     }
   }
@@ -151,12 +155,42 @@ search: false
 }
 
 .posts {
-  margin-top: 4em;
+  margin-top: 6em;
   padding-top: 2em;
-  border-top: 1px solid $border-color;
 
   .archive__subtitle {
     margin-top: 0;
+  }
+
+  .list__item {
+    margin-bottom: 1.25em;
+    border: 1px solid $border-color;
+    border-radius: 8px;
+    background: $background-color;
+    box-shadow: $box-shadow;
+    transition: $global-transition;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &:hover,
+    &:focus-within {
+      border-color: $primary-color;
+    }
+  }
+
+  .archive__item {
+    position: relative;
+    padding: 1.1em 1.3em;
+  }
+
+  .archive__item-title {
+    margin-top: 0;
+  }
+
+  .archive__item-excerpt {
+    margin-bottom: 0;
   }
 }
 
@@ -167,4 +201,18 @@ search: false
   p {
     margin-bottom: 1.25em;
   }
+}
+
+// Masthead social icon links
+.masthead__menu-item--icon {
+  a {
+    margin-inline: 0.6rem;
+    font-size: 1.1em;
+  }
+}
+
+// Full-width pages (project index)
+.layout--single.wide .page {
+  width: 100%;
+  padding-inline-end: 0;
 }

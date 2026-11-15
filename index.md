@@ -3,7 +3,7 @@ layout: splash
 title: "Leon Jiang"
 tagline: "I build robots and cool things :)"
 header:
-  overlay_image: /assets/img/bearing/bearing.jpg
+  overlay_image: /assets/img/posts/bearing/bearing.jpg
   overlay_filter: 0.55
   image_description: "Ball bearing"
   # actions:
@@ -14,6 +14,7 @@ header:
   #   - label: "GitHub"
   #     url: https://github.com/the-relentless-epee
 author_profile: true
+math: true
 ---
 
 <!-- <section class="intro">
@@ -23,29 +24,18 @@ author_profile: true
 
 <section id="projects" class="projects">
   <div class="projects__header">
-    <h2>Projects</h2> 
+    <h1>Projects</h1> 
+    <hr>
     <!-- <p>A selection of builds from the bench. Click any card for the full write-up.</p> -->
   </div>
-
-  {% assign projects = site.projects | sort: 'order' %}
-  <div class="project-grid">
-    {% for project in projects %}
-    <a class="project-card" href="{{ project.url | relative_url }}">
-      <div class="project-card__thumb">
-        <img src="{{ project.thumbnail | relative_url }}" alt="{{ project.title | escape }}" loading="lazy">
-      </div>
-      <div class="project-card__body">
-        <h3 class="project-card__title">{{ project.title }}</h3>
-        <p class="project-card__summary">{{ project.summary | default: project.excerpt | strip_html | truncate: 120 }}</p>
-        <span class="project-card__cta">View project &rarr;</span>
-      </div>
-    </a>
-    {% endfor %}
-  </div>
+  {% include project-grid.html %}
 </section>
 
 <section id="posts" class="posts">
-  <h2 class="archive__subtitle">Recent Posts</h2>
+  <div class="posts__header">
+    <h1>Blog Posts</h1>
+    <hr>
+  </div>
   <div class="entries-list">
     {% include documents-collection.html entries=site.posts type='list' %}
   </div>

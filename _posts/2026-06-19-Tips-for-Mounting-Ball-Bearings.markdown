@@ -3,6 +3,7 @@ layout: single
 title:  "Tips for Mounting Ball Bearings"
 date:   2026-06-19
 categories: notes
+math: true
 ---
 
 
@@ -12,9 +13,11 @@ for thin-wall bearings that have a large enough inner diameter to fit some print
 
 
 inner race mounting with M2 screws, 6702 bearing:
-<img src="/assets/img/bearing/bearing.jpg" alt="inner race" width="400">
+<img src="/assets/img/posts/bearing/bearing.jpg" alt="inner race" width="400">
 
 outer race mounting with M2 screws, 6702 bearing:
-<img src="/assets/img/bearing/outer race.webp" alt="outer race" width="400">
+<img src="/assets/img/posts/bearing/outer race.webp" alt="outer race" width="400">
 
 To do this in CAD, simply design screw holes around the circumference of the bearing. Make sure there is some overlap between the edge of the screw head and the bearing race so there is sufficient clamping. 
+
+<img src="/assets/img/posts/bearing/cad_sc.png" alt="outer race" width="500">

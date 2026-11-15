@@ -1,8 +1,10 @@
 ---
 title: "BLDC Virtual Cartesian Spring"
 summary: "A 2-DOF robot arm that simulates a virtual spring and slider mechanism"
-thumbnail: /assets/img/projects/bearing-fixture.svg
+thumbnail: /assets/img/projects/bldc_spring/PXL_20260904_070001864.jpg
+thumbnail_position: "50% 66%"
 order: 2
+math: true
 ---
 
 # Overview:
@@ -11,9 +13,12 @@ This is a quick project to learn-by-doing FOC control theory and Jacobian-based 
 
 The goal is to have a robot arm whose end-effector behaves like a linear slider attached to a spring, with adjustable parameters such as the stiffness/linearity of the virtual spring.
 
+<img src="/assets/img/projects/bldc_spring/Screenshot 2026-11-14 145653.png" alt="BLDC Virtual Spring" width="400">
 
 ## Hardware
 The mechanical design is simple. It's a 2-DOF planar serial link manipulator (aka robot arm) driven by 2804 gimbal motors. The 3-phase driver is a SimpleFOC Mini board, and I put on some cheap encoders (AS5600) for angle sensing. All the connection parts were 3D printed.
+
+<img src="/assets/img/projects/bldc_spring/PXL_20260904_070001864.jpg" alt="BLDC Virtual Spring" width="400">
 
 ## FOC Algorithm & firmware
 
@@ -21,9 +26,6 @@ I learned the theory behind Field-Oriented Control for PMSMs, and hand-wrote the
 
 I also manually implemented EMA low-pass filters to get rid of the quantization noise from the AS5600 velocity readings (since it's only 12 bits), and then modified the code to run 2 motors from one ESP32. The loop frequency dropped to ~1.4kHz, but still worked well enough for the next part.
 
-<video controls width="300">
-  <source src="/assets/img/projects/bldc_spring/torque_link.mp4" type="video/mp4">
-</video>
 
 ## Virtual Spring Behavior
 I wanted the end-effector to feel as if it is constrained by a linear rail, and spring-loaded. To achieve this, I can define an arbitrary line that acts as the rail. When the end-effector's position deviates from that line, the controller responds with a large force vector pointing straight to the line. While this isn't a "true" linear rail behavior, it's the best approximation given the limited torque of the gimbal motors. 

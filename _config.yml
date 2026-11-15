@@ -90,6 +90,8 @@ defaults:
       layout: single
       author_profile: true
       share: false
+      toc: true
+      toc_sticky: true
 
 # Exclude from processing.
 # The following items will not be processed, by default.

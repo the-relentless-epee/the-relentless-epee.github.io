@@ -1,5 +1,16 @@
 # main links
 main:
+  - title: "Instagram"
+    icon: "fab fa-instagram"
+    url: "https://instagram.com/leons_random_makes"
+    target: "_blank"
+  - title: "GitHub"
+    icon: "fab fa-github"
+    url: "https://github.com/the-relentless-epee"
+    target: "_blank"
+  - title: "Email"
+    icon: "fas fa-envelope"
+    url: "mailto:leonjiangzc@gmail.com"
   - title: "Projects"
     url: /#projects
   - title: "About"

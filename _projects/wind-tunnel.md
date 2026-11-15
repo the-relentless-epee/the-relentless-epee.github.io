@@ -1,8 +1,9 @@
 ---
-title: "Rolling Tool Cart"
-summary: "A mobile tool cart with printed drawer organizers and a folding side table."
-thumbnail: /assets/img/projects/workshop-cart.svg
+title: "Wind Tunnel Force Sensor"
+summary: "2-axis force measurement assembly for high school physics class"
+thumbnail: assets/img/projects/wind_tunnel/Screenshot 2026-11-13 084256.png
 order: 6
+math: true
 ---
 
 ![Rolling tool cart](/assets/img/projects/workshop-cart.svg)
