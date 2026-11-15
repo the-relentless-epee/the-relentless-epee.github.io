@@ -26,3 +26,8 @@ Bowden actuators can either have 1 or 2 tubes. 1-tube systems either use push-pu
 ## Potential Applications
 
 The main advantage of a bowden actuator is that you can use a powerful (often heavy) actuator to drive a joint where low inertia is needed (such as an end-effector gripper). The only limit to the torque output is the tensile strength of the cable, and how much radial stress the tubing can handle. In a future version I will try using bike brake tubes for more strength, although flexibility would be lower.
+
+I adapted the same design concept to use in the [wrist exoskeleton]({% link _projects/drum-exoskeleton.md %}):
+
+<img src="/assets/img/projects/bowden_actuator/PXL_20260724_014051607.jpg" width=500>
+
